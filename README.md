@@ -10,7 +10,7 @@ Greenden Plants is a fully responsive and visually appealing website created for
 - Lightweight and Fast: Built with performance and usability in mind.
 
 ## 🚀 Live Demo
-👉 [View the Live Demo Here] (https://praveenkumaryogi11.github.io/Greenden-Tailwindcss/)
+👉 [View the Live Demo Here](https://praveenkumaryogi11.github.io/Greenden-Tailwindcss/)
 
 ## 🛠 Technologies
 - HTML5: Semantic and modern web structure.
