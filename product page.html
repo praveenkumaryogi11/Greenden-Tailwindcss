@@ -19,8 +19,8 @@
     <nav class="bg-green-100 p-3 flex items-center justify-between shadow-xl sticky top-0 z-10">
         <h1 class="text-2xl hover: ">Greenden</h1>
 
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
-            class="h-8 w-8 md:hidden"> ><!--size adjusted-->
+        <svg id="menuicon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+            stroke="currentColor" class="h-8 w-8 md:hidden"> ><!--size adjusted-->
             <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
         </svg>
 
@@ -28,21 +28,38 @@
 
         <ul class="flex gap-5 text-gray-600 hidden md:flex"> <!--below li become straight line-->
             <li><a class="hover:underline hover:text-black" href="index.html">Home</a> </li>
-            <li><a class="hover:underline hover:text-black" href="#">Products</a> </li>
+            <li><a class="hover:underline hover:text-black" href="product page.html">Products</a> </li>
             <li><a class="hover:underline hover:text-black" href="contact page.html">Contact</a> </li>
         </ul>
     </nav>
 
-     <!-- product section -->
-     <section class="text-center">
-        <h1 class="text-center mt-5 font-bold text-3xl">Our Product</h1>
-        <input type="text" class="border border-black  p-2 m-3" style="width: 80%;" placeholder="Search for Product...">
+    <!-- side navbar -->
+
+    <section id="sidenav" class="bg-green-100 fixed z-20 top-0 transition-all duration-1000"
+        style="width: 50%; height: 100vh; right: -50%; ">
+        <div class="text-right p-5">
+            <p id="closenav" class="inline cursor-pointer">
+                X
+            </p>
         </div>
-            </section>
+
+        <ul class="flex gap-10 flex-col items-center text-gray-600"> <!--below li become straight line-->
+            <li><a class="hover:underline hover:text-black" href="index.html">Home</a> </li>
+            <li><a class="hover:underline hover:text-black" href="product page.html">Products</a> </li>
+            <li><a class="hover:underline hover:text-black" href="./contact page.html">Contact</a> </li>
+        </ul>
+    </section>
+
+    <!-- product section -->
+    <section class="text-center">
+        <h1 class="text-center mt-5 font-bold text-3xl">Our Product</h1>
+        <input id="Search"  type="text" class="border border-black  p-2 m-3" style="width: 80%;" placeholder="Search for Product...">
+        </div>
+    </section>
 
     <!-- our Product -->
     <section class="p-4 text-center">
-        <div class="grid grid-cols-2 md:grid-cols-4 mt-5 gap-5 hover:">
+        <div id="product-container" class="grid grid-cols-2 md:grid-cols-4 mt-5 gap-5 hover:">
             <div>
                 <img src="./images/best seller_1.jpg " alt="Flower"
                     class="inline hover:shadow-xl transform hover:-translate-y-2">
@@ -122,11 +139,12 @@
 
 
     <!-- footer -->
-     <section class="bg-green-100 p-6 flex flex-col gap-5 mt-5">
+    <section class="bg-green-100 p-6 flex flex-col gap-5 mt-5">
         <h1 class="font-bold text-4xl">Greenden</h1>
         <p class="mt-5">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique, perferendis.</p>
         <p>@ 2025 Greenday.cpm</p>
-     </section>
+    </section>
+    <script src="product.js"></script>
 </body>
 
 </html>
